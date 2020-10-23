@@ -3,7 +3,7 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const fs = require('fs');
 
-fs.readdir('./Commandes/', (error, f) => {
+fs.readdir('./commande/', (error, f) => {
     if (error) { return console.error(error); }
         let commandes = f.filter(f => f.split('.').pop() === 'js');
         if (commandes.length <= 0) { return console.log('Aucune commande trouvée !'); }
