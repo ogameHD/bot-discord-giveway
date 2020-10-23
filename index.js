@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
+const TOKEN = require('./token');
 const fs = require('fs');
 
 fs.readdir('./commande/', (error, f) => {
@@ -26,4 +27,4 @@ fs.readdir('./Events/', (error, f) => {
         });
 });
 
-client.login("");
+client.login(TOKEN);
