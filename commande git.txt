@@ -1,0 +1,12 @@
+git init
+git config --global user.name ' '
+git config --global user.email ' '
+git clone [lien]
+git add .
+git commit -m ' '
+git push
+git branch [nom branch]
+git checkout '[nom branch]'
+git branch -- list
+git merge [nom branch]
+git pull
