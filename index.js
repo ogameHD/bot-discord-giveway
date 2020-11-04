@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-const TOKEN = require('./token');
 const fs = require('fs');
 
-fs.readdir('./commande/', (error, f) => {
+fs.readdir('./commandes/', (error, f) => {
     if (error) { return console.error(error); }
         let commandes = f.filter(f => f.split('.').pop() === 'js');
         if (commandes.length <= 0) { return console.log('Aucune commande trouvée !'); }
@@ -27,4 +26,9 @@ fs.readdir('./Events/', (error, f) => {
         });
 });
 
-client.login(TOKEN);
+
+
+
+
+
+client.login("NzczNTUzNTIyMTEzMTE4MjI5.X6K52w.KyP9YCwUHu50fV1MlPFn76KkoDc");
